@@ -1,6 +1,3 @@
-'''
-Written by Pierre Coiron
-'''
 print("Program Start, Importing Libraries")
 import cv2
 import numpy as np
