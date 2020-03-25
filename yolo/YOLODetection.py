@@ -13,9 +13,9 @@ classes=[]
 
 
 #set the values of the classes of classifiable objects to what was trained on the network
-with open("coco.names","r") as f:
+with open("coco.names","iterateCOCO") as iterateCOCO:
     #put all of the classifiable objects into an array
-    classes=[line.strip() for line in f.readlines()]
+    classes=[line.strip() for line in iterateCOCO.readlines()]
 
 #defining output layers
 layerNames=net.getLayerNames()
